@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Карточні ігри онлайн — Blackjack, Poker, Memory | NEON CASINO</title>
+
+  <!-- Canonical & hreflang (параметр lang у URL) -->
+  <link rel="canonical" href="https://username.github.io/neon-casino/"/>
+  <link rel="alternate" hreflang="x-default" href="https://username.github.io/neon-casino/"/>
+  <link rel="alternate" hreflang="uk" href="https://username.github.io/neon-casino/?lang=uk"/>
+  <link rel="alternate" hreflang="en" href="https://username.github.io/neon-casino/?lang=en"/>
+  <link rel="alternate" hreflang="ru" href="https://username.github.io/neon-casino/?lang=ru"/>
+
+  <!-- SEO -->
+  <meta name="description" content="Безкоштовні карточні ігри онлайн: Блекджек, Війна, Memory, High/Low та Покер 5-Draw — NEON CASINO. Без реєстрації, миттєвий старт.">
+  <meta name="keywords" content="карточні ігри онлайн, блэкджек, покер, memory, high low, грати безкоштовно, play card games online">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NEON CASINO — Card Games Online">
+  <meta property="og:description" content="Play Blackjack, Poker 5-Draw, War, Memory, High/Low in your browser. Free & instant.">
+  <meta property="og:url" content="https://username.github.io/neon-casino/">
+  <meta property="og:site_name" content="NEON CASINO">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"NEON CASINO",
+    "url":"https://username.github.io/neon-casino/",
+    "description":"Free browser card games: Blackjack, War, Memory, High/Low, Poker 5-Draw."
+  }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b1220;--txt:#eaf2ff;--panel:#12213d;--btn1:#22d3ee;--btn2:#60a5fa}
+    *{box-sizing:border-box} body{margin:0;font-family:Poppins,system-ui;background:var(--bg);color:var(--txt)}
+    header,main,footer{max-width:1100px;margin:0 auto;padding:20px}
+    header{display:flex;justify-content:space-between;align-items:center;gap:12px}
+    h1{margin:10px 0 6px;font-size:34px;letter-spacing:.02em}
+    p{margin:8px 0 0}
+    .card{background:var(--panel);padding:18px;border-radius:16px}
+    .btn{display:inline-block;padding:14px 22px;border-radius:12px;font-weight:800;text-decoration:none;border:2px solid rgba(34,211,238,.85);background:linear-gradient(180deg,var(--btn2),var(--btn1));color:#05222a}
+    .lang{display:flex;gap:8px}
+    .lang button{cursor:pointer;border:none;border-radius:10px;padding:8px 12px;font-weight:700;background:#203356;color:#cfeaff}
+    .lang button.active{outline:2px solid #22d3ee}
+    ul{margin:8px 0 0;padding-left:18px}
+    footer{font-size:13px;color:#a7bed4;text-align:center}
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <div style="width:42px;height:42px;border-radius:12px;background:conic-gradient(from 90deg,#7c3aed,#d946ef,#ff2d7a,#22d3ee)"></div>
+    </div>
+    <div class="lang">
+      <button data-lang="uk" class="active">UA</button>
+      <button data-lang="en">EN</button>
+      <button data-lang="ru">RU</button>
+    </div>
+  </header>
+
+  <main class="card">
+    <h1 id="title">Карточні ігри онлайн — грати безкоштовно</h1>
+    <p id="lead">Ласкаво просимо до <b>NEON CASINO</b>: Блекджек, Війна, Пам’ять (Memory), High/Low та Покер 5-Draw — прямо у браузері. Без реєстрації, миттєвий старт.</p>
+    <ul id="bullets">
+      <li>Плавні анімації, неоновий стиль</li>
+      <li>Регулювання ставки, баланс, звуки</li>
+      <li>Вибір мови (UA / EN / RU)</li>
+    </ul>
+    <p style="margin-top:16px">
+      <a class="btn" href="./app/">Играть / Play / Грати</a>
+    </p>
+  </main>
+
+  <footer>© NEON CASINO — Free online card games (Blackjack, Poker, Memory, High/Low, War)</footer>
+
+  <script>
+  // Простий i18n + підтримка ?lang=
+  const dict={
+    uk:{
+      title:"Карточні ігри онлайн — грати безкоштовно",
+      lead:"Ласкаво просимо до <b>NEON CASINO</b>: Блекджек, Війна, Пам’ять (Memory), High/Low та Покер 5-Draw — прямо у браузері. Без реєстрації, миттєвий старт.",
+      bullets:["Плавні анімації, неоновий стиль","Регулювання ставки, баланс, звуки","Вибір мови (UA / EN / RU)"],
+      desc:"Безкоштовні карточні ігри онлайн: Блекджек, Війна, Memory, High/Low та Покер 5-Draw — NEON CASINO. Без реєстрації, миттєвий старт."
+    },
+    en:{
+      title:"Play card games online — free",
+      lead:"Welcome to <b>NEON CASINO</b>: Blackjack, War, Memory, High/Low and Poker 5-Draw — right in your browser. No signup, instant start.",
+      bullets:["Smooth animations, neon style","Adjust bet, balance, sounds","Language switch (UA / EN / RU)"],
+      desc:"Free online card games: Blackjack, War, Memory, High/Low and Poker 5-Draw — NEON CASINO. No registration, instant start."
+    },
+    ru:{
+      title:"Карточные игры онлайн — играть бесплатно",
+      lead:"Добро пожаловать в <b>NEON CASINO</b>: Блэкджек, Война, Память (Memory), High/Low и Покер 5-Draw — прямо в браузере. Без регистрации, мгновенный старт.",
+      bullets:["Плавные анимации, неоновый стиль","Регулировка ставки, баланс, звуки","Выбор языка (UA / EN / RU)"],
+      desc:"Бесплатные карточные игры онлайн: Блэкджек, Война, Memory, High/Low и Покер 5-Draw — NEON CASINO. Без регистрации, быстрый старт."
+    }
+  };
+  const titleEl=document.getElementById('title');
+  const leadEl=document.getElementById('lead');
+  const bulletsEl=document.getElementById('bullets');
+  const langBtns=[...document.querySelectorAll('.lang button')];
+
+  function setLang(l){
+    const d=dict[l]||dict.uk;
+    // оновити тексти
+    titleEl.textContent=d.title;
+    leadEl.innerHTML=d.lead;
+    bulletsEl.innerHTML = d.bullets.map(x=>`<li>${x}</li>`).join('');
+    // SEO description динамічно
+    document.querySelector('meta[name="description"]').setAttribute('content', d.desc);
+    // активна кнопка
+    langBtns.forEach(b=>b.classList.toggle('active', b.dataset.lang===l));
+    // оновити заголовок
+    document.title = (l==='uk') ? "Карточні ігри онлайн — Blackjack, Poker, Memory | NEON CASINO"
+      : (l==='ru') ? "Карточные игры онлайн — Blackjack, Poker, Memory | NEON CASINO"
+      : "Play card games online — Blackjack, Poker, Memory | NEON CASINO";
+    // оновити URL-параметр (без перезавантаження)
+    const u=new URL(window.location); u.searchParams.set('lang', l); history.replaceState(null,'',u);
+  }
+
+  // читання ?lang=
+  const urlLang=new URL(location).searchParams.get('lang');
+  const initLang = ['uk','en','ru'].includes(urlLang) ? urlLang :
+                   (navigator.language||'').startsWith('uk') ? 'uk' :
+                   (navigator.language||'').startsWith('ru') ? 'ru' : 'en';
+  setLang(initLang);
+  langBtns.forEach(b=>b.addEventListener('click', ()=>setLang(b.dataset.lang)));
+  </script>
+</body>
+</html>
